@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bun": "^1.2.2",
+    "qrcode.react": "^4.2.0"
+  }
+}

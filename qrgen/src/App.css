@@ -1,0 +1,109 @@
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #24292e, #0d1117);
+  color: #f0f6fc;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box; 
+}
+
+.qr-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #58a6ff;
+  text-align: center; 
+}
+
+.qr-container input[type="text"] {
+  width: 90%;
+  max-width: 600px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #30363d;
+  background-color: #161b22;
+  color: #f0f6fc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.qr-container input[type="text"]:focus {
+  border-color: #58a6ff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(88, 166, 255, 0.2);
+}
+
+.qr-code {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  width: fit-content; 
+}
+
+.qrgen {
+  display: block; 
+  max-width: 100%; 
+  height: auto;  
+}
+
+.qr-container button {
+  background-color: #2ea44f;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qr-container button:hover {
+  background-color: #2c974b;
+}
+
+.qr-container button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(46, 164, 79, 0.3);
+}
+
+@media (max-width: 768px) {
+  .qr-container h2 {
+    font-size: 2rem;
+  }
+
+  .qr-container input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  .qr-container button {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .qr-code {
+    width: 90%; 
+    max-width: 300px; 
+  }
+}
+
+@media (max-width: 400px) { 
+  .qr-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .qr-container input[type="text"] {
+    font-size: 0.8rem;
+  }
+
+  .qr-container button {
+    font-size: 0.9rem;
+  }
+}
