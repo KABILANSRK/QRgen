@@ -90,7 +90,7 @@
 
   .qr-code {
     width: 90%; 
-    max-width: 300px; 
+    max-width: 200px; 
   }
 }
 
@@ -105,5 +105,10 @@
 
   .qr-container button {
     font-size: 0.9rem;
+  }
+
+  .qr-code {
+    width: 90%; 
+    max-width: 200px; 
   }
 }
